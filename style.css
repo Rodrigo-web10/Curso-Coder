@@ -1,21 +1,17 @@
-.table--title {
-  text-decoration: underline;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 1 | @import 'horarios';
+ *   |         ^^^^^^^^^^
+ *   '
+ *   style.scss 1:9  root stylesheet */
 
-body {
-  color: #000000;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import 'horarios';\d\a   \2502          ^^^^^^^^^^\a   \2575 \a   style.scss 1:9  root stylesheet";
 }
-body header {
-  color: #000000;
-}
-body header nav {
-  color: #000000;
-}
-body header nav ul {
-  color: #000000;
-}
-body header nav ul li {
-  color: #000000;
-}
-
-/*# sourceMappingURL=style.css.map */

@@ -1,32 +1,3 @@
-@import 'horarios';
-@import 'planes';
-
-//variables
-
-$subrayado: underline;
-$negrito: #000000;
-
-.table--title{
-    text-decoration: $subrayado;
-}
-
-//anidacion
-body{
-  color: #000000;
-    header{
-      color: $negrito;
-        nav{
-          color: $negrito;
-            ul{
-              color: $negrito;
-                li{
-                    color: $negrito;
-                }
-            }
-        }
-    }
-}
-
 //extend
 .boton2{
     margin-top: 40px;
