@@ -8,3 +8,18 @@ $negrito: #000000;
 }
 
 //anidacion
+body{
+  color: #000000;
+    header{
+      color: $negrito;
+        nav{
+          color: $negrito;
+            ul{
+              color: $negrito;
+                li{
+                    color: $negrito;
+                }
+            }
+        }
+    }
+}
