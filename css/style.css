@@ -3,7 +3,6 @@
     padding: 0px;
 }
 
-
 body{
     margin: 0;
     background-color: lightgray;
@@ -54,7 +53,6 @@ main h1{
     margin-left: -1%;
 }
 
-
 .menu{
     background-image: url(../assets/images/menunuevo.jpg);
     text-align: center;
@@ -86,7 +84,6 @@ main h1{
     margin-top: 1%;
     width: 600px;
 }
-
 
 footer{
     background-color: #2d2b2b;
@@ -234,7 +231,6 @@ footer a{
     font-weight: bold;
 }
 
-
 .lugares{
     display: flex;
     flex-direction: row;
@@ -291,4 +287,111 @@ p{
 .entrada{
     height: 150px;
     width: 250px;
+}
+
+/* Responsive styles */
+
+@media (max-width: 900px) {
+  .container--promos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lugares {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .mapita, .foto1, .foto2 {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    float: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: block;
+    line-height: 40px;
+    margin-left: 0;
+  }
+
+  .logogym {
+    width: 70px;
+    height: 60px;
+    margin-left: 10px;
+  }
+
+  .container-table {
+    width: 95%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    gap: 10px;
+    margin: 20px auto;
+  }
+
+  .table--title {
+    font-size: 1.2em;
+    padding: 10px 0;
+  }
+
+  .table--header, .table--item {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #marca {
+    float: none;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  footer nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  footer nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .container--promos {
+    grid-template-columns: 1fr;
+  }
+
+  form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  form input[type="text"],
+  form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  form input[type="radio"] {
+    margin-left: 10px;
+  }
 }
